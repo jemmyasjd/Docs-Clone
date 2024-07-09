@@ -1,6 +1,8 @@
 import { Server } from "socket.io";
 import connectDB from "./database/db.js";
 import { getDocument,updateDocument } from "./controller/document-controller.js";
+const express = require('express');
+const app = express();
 
 
 
@@ -10,7 +12,7 @@ connectDB();
 
 const io = new Server(PORT, {
     cors: {
-        origin: ["https://your-frontend-url.vercel.app"],
+        origin: ["https://docsyncing.vecel.app"],
         methods: ["GET", "POST"],
         allowedHeaders: ["my-custom-header"],
         credentials: true
@@ -38,4 +40,8 @@ io.on("connection", (socket) => {
 
    
 }); 
+
+app.get('/', (req, res) => {
+    res.send('Hello World')
+})
 
