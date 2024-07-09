@@ -18,7 +18,7 @@ DocSync is a collaborative document editing web application, similar to Google D
 - **Backend Development:** Node.js and Express.js were employed to create a robust backend, managing API requests and server-side logic.
 - **Database Management:** MongoDB was used for robust and scalable data storage, ensuring efficient management of documents and user data.
 
-## Challenges We Ran Into 💀
+## Challenges encountered 💀
 
 - **Real-Time Synchronization:** Ensuring real-time synchronization of document edits among multiple users required meticulous handling of Socket.io events and data consistency.
 - **Rich Text Formatting:** Integrating Quill to provide a seamless and rich text editing experience posed challenges in maintaining consistent formatting across different browsers and devices.
