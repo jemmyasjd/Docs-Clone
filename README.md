@@ -10,7 +10,7 @@
 
 DocSync is a collaborative document editing web application, similar to Google Docs. It enables multiple users to edit documents simultaneously with real-time updates. Users can format their text with comprehensive rich text options, ensuring their documents look professional and polished. The platform ensures that every change is instantly reflected for all collaborators, making teamwork smooth and efficient.
 
-## How We Build 🔧
+## How It is Build 🔧
 
 - **Frontend Development:** We developed the frontend using React to create a responsive and intuitive user interface.
 - **Real-Time Collaboration:** Implemented real-time collaboration features using Socket.io, allowing multiple users to edit documents simultaneously with instant updates.
