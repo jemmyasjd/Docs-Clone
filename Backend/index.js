@@ -3,13 +3,14 @@ import connectDB from "./database/db.js";
 import { getDocument,updateDocument } from "./controller/document-controller.js";
 
 
+
 const PORT = 3000;
 
 connectDB();
 
 const io = new Server(PORT, {
     cors: {
-        origin: "http://localhost:5173",
+        origin: "https://docsyncing.vercel.app",
         methods: ["GET", "POST"],
     },
 });
@@ -34,3 +35,4 @@ io.on("connection", (socket) => {
 
    
 }); 
+

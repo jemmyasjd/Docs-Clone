@@ -54,7 +54,7 @@ const Editior = () => {
 // setting up the socket connection
 
     useEffect(() => {
-        const socketServer = io('http://localhost:3000')
+        const socketServer = io('https://docs-clone-back.vercel.app/')
         setSocket(socketServer)
         return () => {
             socketServer.disconnect();
