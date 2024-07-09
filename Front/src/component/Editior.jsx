@@ -54,7 +54,9 @@ const Editior = () => {
 // setting up the socket connection
 
     useEffect(() => {
-        const socketServer = io('https://docs-clone-back.vercel.app/')
+        const socketServer = io('https://docs-clone-back.vercel.app', {
+            transports: ['websocket', 'polling'],
+        });        
         setSocket(socketServer)
         return () => {
             socketServer.disconnect();
