@@ -10,9 +10,12 @@ connectDB();
 
 const io = new Server(PORT, {
     cors: {
-        origin: "https://docsyncing.vercel.app",
+        origin: ["https://your-frontend-url.vercel.app"],
         methods: ["GET", "POST"],
+        allowedHeaders: ["my-custom-header"],
+        credentials: true
     },
+    transports: ['websocket', 'polling']
 });
 
 io.on("connection", (socket) => {
